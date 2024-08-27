@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTaskBtn">Add</button>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn" id="allBtn">All</button>
+            <button class="filter-btn" id="activeBtn">Active</button>
+            <button class="filter-btn" id="completedBtn">Completed</button>
+        </div>
+        
+        <ul id="taskList">
+            <li>
+                <span class="task-details">
+                    <span class="task-name">Task Name</span>
+                    <span class="task-time">12:00 PM</span>
+                </span>
+                <span class="action-buttons">
+                    <button class="complete-btn">
+                        <img src="images/completed-icon.png" alt="Complete" />
+                    </button>
+                    <button class="edit-btn">
+                        <img src="images/edit-icon.png" alt="Edit" />
+                    </button>
+                    <button class="delete-btn">
+                        <img src="images/delete-icon.png" alt="Delete" />
+                    </button>
+                </span>
+            </li>
+        </ul>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
